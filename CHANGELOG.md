@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.1.2 (2025-10-25)
+
+### Bug Fixes
+
+- Move publish to top level
+  ([`4fc1c5d`](https://github.com/wwgrainger/triton_python_backend_mock_utils/commit/4fc1c5dbccf34bc046547f3d2a24acbe75726694))
+
+
 ## v0.1.1 (2025-10-25)
 
 ### Bug Fixes

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "triton_python_backend_mock_utils"
-version = "0.1.1"
+version = "0.1.2"
 description = "Mock library for triton python backend utils."
 authors = ["GTG MLOps & Platform Team <mlopsplatformteam@grainger.com>"]
 readme = "README.md"
