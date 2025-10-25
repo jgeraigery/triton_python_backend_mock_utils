@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.1.1 (2025-10-25)
+
+### Bug Fixes
+
+- Try with url
+  ([`7d30b98`](https://github.com/wwgrainger/triton_python_backend_mock_utils/commit/7d30b98450505a345cef253e21b0fc02d9cb77c2))
+
+
 ## v0.1.0 (2025-10-25)
 
 ### Build System
