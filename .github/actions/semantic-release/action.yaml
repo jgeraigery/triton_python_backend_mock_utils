@@ -12,7 +12,7 @@ inputs:
   semantic-release-version:
     description: The version of semantic-release to use
     required: false
-    default: "9.21.1"
+    default: "10.2.0"
   verbose:
     description: Whether to enable verbose logging
     required: false
