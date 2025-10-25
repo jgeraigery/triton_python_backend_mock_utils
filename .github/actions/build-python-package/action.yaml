@@ -1,6 +1,6 @@
 ---
-name: 'publish-python-package'
-description: 'Publishes python package to PyPI'
+name: 'build-python-package'
+description: 'Build python package with version'
 inputs:
   version:
     description: The version to publish (optional). If not provided, will use the current version in pyproject.toml
@@ -38,6 +38,3 @@ runs:
       shell: bash
       run: |
         poetry build
-
-    - name: Publish package distributions to PyPI
-      uses: pypa/gh-action-pypi-publish@release/v1

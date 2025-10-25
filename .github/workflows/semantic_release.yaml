@@ -28,7 +28,10 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           semantic-release-config: pyproject.toml
 
-      - name: Publish package
-        uses: ./.github/actions/publish-python-package
+      - name: build package
+        uses: ./.github/actions/build-python-package
         with:
           version: ${{ steps.semver.outputs.version }}
+
+      - name: Publish package distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
