@@ -37,12 +37,15 @@ if __name__ == "__main__":
     # Example model configuration for testing
     model_config = {"output": [{"name": "OUTPUT0", "data_type": "TYPE_FP32"}]}
     args = {"model_config": json.dumps(model_config)}
+
+    print("Initializing Model.")
     model.initialize(args)
 
     # Add code to create mock requests and call model.execute(requests)
     requests = [
         pb_utils.InferenceRequest(inputs=[pb_utils.Tensor("INPUT0", np.array([1.0, 2.0, 3.0], dtype=np.float32))])
     ]
+    print("Calling Model.")
     responses = model.execute(requests)
 
     assert len(responses) == 1
