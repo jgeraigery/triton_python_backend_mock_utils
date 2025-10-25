@@ -10,7 +10,9 @@ jobs:
   release-python-package:
     name: Publish py package
     runs-on: ubuntu-latest
-    environment: pypi
+    environment:
+      name: pypi
+      url: https://pypi.org/p/triton_python_backend_mock_utils
     outputs:
       version: ${{ steps.semver.outputs.version }}
     steps:
