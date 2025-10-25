@@ -1,0 +1,32 @@
+name: semantic-release
+
+permissions:
+  id-token: write
+  contents: write
+
+on: workflow_dispatch
+
+jobs:
+  release-python-package:
+    name: Publish py package
+    runs-on: ubuntu-latest
+    environment: pypi
+    outputs:
+      version: ${{ steps.semver.outputs.version }}
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Calculate next version
+        id: semver
+        uses: ./.github/actions/semantic-release
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          semantic-release-config: pyproject.toml
+
+      - name: Publish package
+        uses: ./.github/actions/publish-python-package
+        with:
+          version: ${{ steps.semver.outputs.version }}
