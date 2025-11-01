@@ -3,7 +3,7 @@
 This is a mock library for the triton_python_backend_utils python package that is available inside a [triton server](https://github.com/triton-inference-server/server) python backend runtime.
 This mock library is intended to be used for local development and unit testing of triton python backend models outside the triton server container environment.
 This library attempts to replicate the interface of the triton_python_backend_utils package, but may not have full functionality or behavior of the original package.
-PRs are welcome to improve the mock library to better match the real package.
+PRs are welcome to improve the mock library to better match the real package. Please see the [contributing guide](CONTRIBUTING.md) for contribution instructions and guidelines.
 
 The need for this mock library was brought up in the following GitHub issue: https://github.com/triton-inference-server/server/issues/5813
 
