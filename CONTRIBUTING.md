@@ -61,7 +61,7 @@ type: short description
 - Use the imperative mood in the description ("add support for…").
 - Commits that break backwards compatibility must include `[BREAKING CHANGE]` in the commit footer.
 
-Commit messages are used to generate changelogs and determine version bumps, so please keep them clear and accurate. 
+Commit messages are used to generate changelogs and determine version bumps, so please keep them clear and accurate.
 Rebasing and squashing commits before merging is encouraged to maintain a clean history.
 
 ## Pull Request Checklist
