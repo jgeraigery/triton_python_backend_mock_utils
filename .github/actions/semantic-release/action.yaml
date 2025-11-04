@@ -94,5 +94,4 @@ runs:
           echo "No release was made." > $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "This can happen if no [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) were found in the last commit range." >> $GITHUB_STEP_SUMMARY
-          echo "Please see [this guide](https://grainger.atlassian.net/wiki/spaces/MLOPS/pages/164991533166/Semantic+Release) for more information." >> $GITHUB_STEP_SUMMARY
         fi
